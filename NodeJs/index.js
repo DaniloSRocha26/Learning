@@ -1,11 +1,17 @@
-console.log("Hello World");
-const { Person } = require("./person");
+// console.log("Hello World");
+// const { Person } = require("./person");
+const dotenv = require("dotenv");
+const connectToDataBase = require("./src/database/connect.js");
 
-//require("./modules/path.js");
+dotenv.config();
 
-//require("./modules/fs.js");
+connectToDataBase();
 
-require("./modules/http.js");
+// //require("./modules/path.js");
+// //require("./modules/fs.js");
+// //require("./modules/http.js");
 
-//Apenas o nome do arquivo atual
-const person = new Person("Felipe");
+// require("./modules/express.js");
+
+// //Apenas o nome do arquivo atual
+// const person = new Person("Felipe");
